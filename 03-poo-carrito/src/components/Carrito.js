@@ -7,6 +7,12 @@ export default class Carrito {
   }
 
   // metodos
+  /**
+   * 
+   * @param {*} nombre 
+   * @param {*} cantidad 
+   * @param {*} precio 
+   */
   agregarProducto(nombre, cantidad, precio) {
     this.productos.push(new Producto(nombre, cantidad, precio));
     // lo guardamos también en el LOCALStorage
